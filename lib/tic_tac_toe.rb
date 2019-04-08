@@ -24,6 +24,7 @@ module TicTacToe
             board.displayBoard(tablero)
             
             while continues
+
                 puts ""
                 puts turno == "x" ? "Turno de 'x'" : "Turno de 'o'"
                 print "Ingresa la ubicación tal como se muestra o 't' para terminar: ".green
@@ -50,6 +51,11 @@ module TicTacToe
                         else
                             fake_coords, in_use = board.coords_position(temp, tam, tablero, turno)
                         end
+
+                        #Remove the comments below to run the test
+                        #continues = false
+                        #playing = false
+                        #fake_coords = false
                     end
 
                     winner = board.check_rows(tablero, tam)
@@ -71,8 +77,6 @@ module TicTacToe
                         end
                     end
                     turno == "x" ? turno = "o" : turno = "x"
-
-                    # continues = false
                 end
             end
         end

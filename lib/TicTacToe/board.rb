@@ -28,6 +28,7 @@ module TicTacToe
                 end
                 puts
             end
+            true
         end
 
         def coords_position(seleccion, tam, tablero, turno)

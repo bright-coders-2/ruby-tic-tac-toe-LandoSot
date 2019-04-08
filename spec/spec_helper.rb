@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "TicTacToe"
+require "tic_tac_toe"
 
 
 RSpec.configure do |config|
